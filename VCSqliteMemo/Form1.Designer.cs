@@ -71,7 +71,7 @@ namespace VCSqliteMemo
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(444, 69);
+            this.textBox2.Location = new System.Drawing.Point(579, 12);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(93, 19);
             this.textBox2.TabIndex = 2;
@@ -79,18 +79,18 @@ namespace VCSqliteMemo
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(477, 43);
+            this.textBox3.Location = new System.Drawing.Point(538, 69);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(55, 19);
             this.textBox3.TabIndex = 3;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(435, 94);
+            this.textBox4.Location = new System.Drawing.Point(505, 94);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox4.Size = new System.Drawing.Size(510, 472);
+            this.textBox4.Size = new System.Drawing.Size(440, 472);
             this.textBox4.TabIndex = 4;
             // 
             // button1
@@ -135,11 +135,11 @@ namespace VCSqliteMemo
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(435, 6);
+            this.button5.Location = new System.Drawing.Point(414, 112);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(97, 31);
+            this.button5.Size = new System.Drawing.Size(85, 31);
             this.button5.TabIndex = 9;
-            this.button5.Text = "レコード追加";
+            this.button5.Text = "←追加";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
@@ -165,21 +165,21 @@ namespace VCSqliteMemo
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(587, 6);
+            this.button8.Location = new System.Drawing.Point(414, 159);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(102, 31);
+            this.button8.Size = new System.Drawing.Size(85, 31);
             this.button8.TabIndex = 12;
-            this.button8.Text = "レコード読み出し";
+            this.button8.Text = "読み出し→";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click_1);
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(587, 55);
+            this.button9.Location = new System.Drawing.Point(414, 208);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(102, 31);
+            this.button9.Size = new System.Drawing.Size(85, 31);
             this.button9.TabIndex = 13;
-            this.button9.Text = "レコード更新";
+            this.button9.Text = "←更新";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click_1);
             // 
@@ -213,7 +213,7 @@ namespace VCSqliteMemo
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(442, 46);
+            this.label2.Location = new System.Drawing.Point(503, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 12);
             this.label2.TabIndex = 18;
