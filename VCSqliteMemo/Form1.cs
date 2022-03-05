@@ -259,6 +259,11 @@ namespace VCSqliteMemo
 
         private void button8_Click_1(object sender, EventArgs e)
         {
+
+
+            textBox4.Font = new System.Drawing.Font("ＭＳ ゴシック", 14,
+                System.Drawing.FontStyle.Bold ,
+                System.Drawing.GraphicsUnit.Point, 128);
             try
             {
                 string s = dataGridView1[dataGridView1.CurrentCell.ColumnIndex + 1, dataGridView1.CurrentCell.RowIndex].Value.ToString();

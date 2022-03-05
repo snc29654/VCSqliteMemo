@@ -65,6 +65,7 @@ namespace VCSqliteMemo
             this.textBox1.Location = new System.Drawing.Point(25, 434);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(383, 132);
             this.textBox1.TabIndex = 1;
             // 
@@ -88,7 +89,8 @@ namespace VCSqliteMemo
             this.textBox4.Location = new System.Drawing.Point(435, 94);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(357, 472);
+            this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox4.Size = new System.Drawing.Size(510, 472);
             this.textBox4.TabIndex = 4;
             // 
             // button1
@@ -113,7 +115,7 @@ namespace VCSqliteMemo
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(811, 262);
+            this.button3.Location = new System.Drawing.Point(798, 567);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(134, 31);
             this.button3.TabIndex = 7;
