@@ -130,10 +130,17 @@ namespace VCSqliteMemo
 
                 sdr.Close();
             }
+            catch (Exception)
+            {
+                MessageBox.Show("テーブルが作成されてません");
+            }
+
+
             finally
             {
                 con.Close();
             }
+
 
         }
 
@@ -180,6 +187,11 @@ namespace VCSqliteMemo
                 }
                 sdr.Close();
             }
+            catch (Exception)
+            {
+                MessageBox.Show("テーブルが作成されてません");
+            }
+
             finally
             {
                 con.Close();
