@@ -208,6 +208,11 @@ namespace VCSqliteMemo
 
         private void button4_Click_1(object sender, EventArgs e)
         {
+
+            textBox1.Clear();
+            dataGridView1.Columns.Clear();
+            dataGridView1.Rows.Clear();
+
             SerachRecordDataAll();
 
         }
@@ -215,6 +220,12 @@ namespace VCSqliteMemo
         private void button5_Click_1(object sender, EventArgs e)
         {
             InsertRecord(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), textBox3.Text, textBox4.Text);
+            textBox1.Clear();
+            dataGridView1.Columns.Clear();
+            dataGridView1.Rows.Clear();
+
+            SerachRecordDataAll();
+
 
         }
 
@@ -306,6 +317,11 @@ namespace VCSqliteMemo
             {
                 MessageBox.Show("事前にレコード読み出しを実行してください");
             }
+            textBox1.Clear();
+            dataGridView1.Columns.Clear();
+            dataGridView1.Rows.Clear();
+
+            SerachRecordDataAll();
 
         }
 
@@ -325,6 +341,10 @@ namespace VCSqliteMemo
 
         private void button10_Click_1(object sender, EventArgs e)
         {
+            textBox1.Clear();
+            dataGridView1.Columns.Clear();
+            dataGridView1.Rows.Clear();
+
             SerachRecordDataKind("NAME", textBox5.Text);
 
         }
