@@ -259,14 +259,19 @@ namespace VCSqliteMemo
 
         private void button8_Click_1(object sender, EventArgs e)
         {
-
-            string s = dataGridView1[dataGridView1.CurrentCell.ColumnIndex + 1, dataGridView1.CurrentCell.RowIndex].Value.ToString();
-            textBox2.Text = s;
-            string s1 = dataGridView1[dataGridView1.CurrentCell.ColumnIndex + 3, dataGridView1.CurrentCell.RowIndex].Value.ToString();
-            textBox3.Text = s1;
-            string s2 = dataGridView1[dataGridView1.CurrentCell.ColumnIndex + 4, dataGridView1.CurrentCell.RowIndex].Value.ToString();
-            textBox4.Text = s2;
-
+            try
+            {
+                string s = dataGridView1[dataGridView1.CurrentCell.ColumnIndex + 1, dataGridView1.CurrentCell.RowIndex].Value.ToString();
+                textBox2.Text = s;
+                string s1 = dataGridView1[dataGridView1.CurrentCell.ColumnIndex + 3, dataGridView1.CurrentCell.RowIndex].Value.ToString();
+                textBox3.Text = s1;
+                string s2 = dataGridView1[dataGridView1.CurrentCell.ColumnIndex + 4, dataGridView1.CurrentCell.RowIndex].Value.ToString();
+                textBox4.Text = s2;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("セルを選択してください");
+            }
 
             //SerachRecordData2("NO", textBox2.Text);
 
@@ -274,9 +279,16 @@ namespace VCSqliteMemo
 
         private void button9_Click_1(object sender, EventArgs e)
         {
+            try
+            {
 
 
-            UpdateRecord(int.Parse(textBox2.Text), DateTime.Now.ToString(), textBox3.Text, textBox4.Text);
+                UpdateRecord(int.Parse(textBox2.Text), DateTime.Now.ToString(), textBox3.Text, textBox4.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("事前にレコード読み出しを実行してください");
+            }
 
         }
 
