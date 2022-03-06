@@ -166,7 +166,7 @@ namespace VCSqliteMemo
                 dataGridView1.Columns[4].HeaderText = "内容";
 
                 string sql = "SELECT * FROM PURCHASELIST WHERE " +
-                $"{column} = '{word}' ORDER BY NO ASC";
+                $"{column} LIKE '{word}' ORDER BY NO ASC";
 
 
                 SQLiteCommand com = new SQLiteCommand(sql, con);
@@ -362,6 +362,21 @@ namespace VCSqliteMemo
 
             SerachRecordDataAll();
 
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            dataGridView1.Columns.Clear();
+            dataGridView1.Rows.Clear();
+
+            SerachRecordDataKind("CONTENT", textBox6.Text);
 
         }
     }
