@@ -164,9 +164,9 @@ namespace VCSqliteMemo
                 dataGridView1.Columns[2].HeaderText = "日時";
                 dataGridView1.Columns[3].HeaderText = "種別";
                 dataGridView1.Columns[4].HeaderText = "内容";
-
+                string word_per = "%" + word + "%";
                 string sql = "SELECT * FROM PURCHASELIST WHERE " +
-                $"{column} LIKE '{word}' ORDER BY NO ASC";
+                $"{column} LIKE '{word_per}' ORDER BY NO ASC";
 
 
                 SQLiteCommand com = new SQLiteCommand(sql, con);
