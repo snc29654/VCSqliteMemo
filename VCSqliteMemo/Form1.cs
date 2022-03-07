@@ -298,7 +298,7 @@ namespace VCSqliteMemo
             }
             catch (Exception)
             {
-                MessageBox.Show("セルを選択してください");
+                MessageBox.Show("行番号を選択してください");
             }
 
             //SerachRecordData2("NO", textBox2.Text);
