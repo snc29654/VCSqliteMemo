@@ -51,6 +51,7 @@ namespace VCSqliteMemo
             this.button12 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button13 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,12 +95,12 @@ namespace VCSqliteMemo
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox4.Size = new System.Drawing.Size(440, 472);
+            this.textBox4.Size = new System.Drawing.Size(563, 472);
             this.textBox4.TabIndex = 4;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(811, 12);
+            this.button1.Location = new System.Drawing.Point(934, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 31);
             this.button1.TabIndex = 5;
@@ -109,7 +110,7 @@ namespace VCSqliteMemo
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(811, 55);
+            this.button2.Location = new System.Drawing.Point(934, 55);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(134, 31);
             this.button2.TabIndex = 6;
@@ -119,9 +120,9 @@ namespace VCSqliteMemo
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(798, 567);
+            this.button3.Location = new System.Drawing.Point(934, 570);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(134, 31);
+            this.button3.Size = new System.Drawing.Size(134, 38);
             this.button3.TabIndex = 7;
             this.button3.Text = "テーブル削除";
             this.button3.UseVisualStyleBackColor = true;
@@ -159,7 +160,7 @@ namespace VCSqliteMemo
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(700, 568);
+            this.button7.Location = new System.Drawing.Point(836, 571);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(92, 36);
             this.button7.TabIndex = 11;
@@ -259,9 +260,20 @@ namespace VCSqliteMemo
             this.label1.TabIndex = 22;
             this.label1.Text = "ワード";
             // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(934, 614);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(134, 38);
+            this.button13.TabIndex = 23;
+            this.button13.Text = "ヘルプ";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
             // 備忘録
             // 
-            this.ClientSize = new System.Drawing.Size(962, 661);
+            this.ClientSize = new System.Drawing.Size(1108, 661);
+            this.Controls.Add(this.button13);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.button12);
@@ -315,6 +327,7 @@ namespace VCSqliteMemo
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button13;
     }
 }
 

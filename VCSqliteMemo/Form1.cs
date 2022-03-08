@@ -379,6 +379,13 @@ namespace VCSqliteMemo
             SerachRecordDataKind("CONTENT", textBox6.Text);
 
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            Form2 f = new Form2();
+            f.ShowDialog(this);
+            f.Dispose();
+        }
     }
 
 }
