@@ -297,6 +297,7 @@ namespace VCSqliteMemo
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "備忘録";
+            this.Load += new System.EventHandler(this.備忘録_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

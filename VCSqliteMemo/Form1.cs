@@ -386,6 +386,14 @@ namespace VCSqliteMemo
             f.ShowDialog(this);
             f.Dispose();
         }
+
+        private void 備忘録_Load(object sender, EventArgs e)
+        {
+            textBox4.Font = new System.Drawing.Font("ＭＳ ゴシック", 14,
+            System.Drawing.FontStyle.Bold,
+            System.Drawing.GraphicsUnit.Point, 128);
+
+        }
     }
 
 }
