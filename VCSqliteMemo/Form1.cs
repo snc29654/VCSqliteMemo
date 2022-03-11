@@ -14,6 +14,8 @@ namespace VCSqliteMemo
 {
     public partial class 備忘録 : Form
     {
+
+        int font_size = 12;
         public 備忘録()
         {
             InitializeComponent();
@@ -284,7 +286,7 @@ namespace VCSqliteMemo
         {
 
 
-            textBox4.Font = new System.Drawing.Font("ＭＳ ゴシック", 14,
+            textBox4.Font = new System.Drawing.Font("ＭＳ ゴシック", font_size,
                 System.Drawing.FontStyle.Bold ,
                 System.Drawing.GraphicsUnit.Point, 128);
             try
@@ -393,6 +395,13 @@ namespace VCSqliteMemo
             System.Drawing.FontStyle.Bold,
             System.Drawing.GraphicsUnit.Point, 128);
 
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedItem = comboBox1.SelectedItem.ToString();
+            font_size = int.Parse(selectedItem);
+            button8_Click_1(sender, e);
         }
     }
 
