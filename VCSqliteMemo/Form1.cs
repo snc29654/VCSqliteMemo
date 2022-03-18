@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using System.Diagnostics;
 
 
 namespace VCSqliteMemo
@@ -402,6 +403,15 @@ namespace VCSqliteMemo
             string selectedItem = comboBox1.SelectedItem.ToString();
             font_size = int.Parse(selectedItem);
             button8_Click_1(sender, e);
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo pInfo = new ProcessStartInfo();
+            pInfo.FileName = "python";
+            pInfo.Arguments = @"C:\github\VCSqliteMemo\bloglink\bloglink.py";
+            Process.Start(pInfo);
+
         }
     }
 
